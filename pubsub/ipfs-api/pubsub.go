@@ -12,7 +12,7 @@ type Subscription struct {
 }
 
 func (s *Subscription) Next() (pubsub.Record, error) {
-	return s.sub.Next()
+	return s.Next()
 }
 
 func (s *Subscription) Cancel() error {
